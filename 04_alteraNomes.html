@@ -8,11 +8,14 @@
     */
 
     //Entrada
-
+    let nomes = ["Hilário", "Rafaela", "José", "Bárbara", "Fábio", "Júlia"];
 
     //Processamento
-
-
+    let listaCorrigida = [];
+    for (let nome of nomes) {
+        let corrigido = nome.replace("á", "a").replace("é", "e").replace("í", "i").replace("ó", "o").replace("ú", "u");
+        listaCorrigida.push(corrigido);
+    }
     //Saída
-
+    alert(`A lista corrigida é: ${listaCorrigida.join(", ")}.`);
 </script>

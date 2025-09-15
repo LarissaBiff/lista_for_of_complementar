@@ -8,10 +8,17 @@
     */
 
     //Entrada
-
+    let cidades = ["Porto Alegre", "Curitiba", "Florianópolis", "Joinville", "Blumenau", "Gramado", "Santa Maria", "Londrina", "Itajaí"];
 
     //Processamento
-
+    let estados = {};
+    for (let cidade of cidades) {
+        let estado = prompt(`A qual estado pertence a cidade de ${cidade}?`).trim();
+        if (!estados[estado]) {
+            estados[estado] = [];
+        }
+        estados[estado].push(cidade);
+    }
 
     //Saída
 

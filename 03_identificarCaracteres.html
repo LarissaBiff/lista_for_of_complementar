@@ -12,11 +12,13 @@
     let consoante = 0;
     let vogal = 0;
 for(let p of palavra) {
-    if(p=="a"|| p=="e" || p=="i" || p=="o" || p=="u") {
-        
+    if(p=="q" || p=="w" || p=="r" || p=="t" || p=="y" || p=="p" || p=="s" || p=="d" || p=="f" || p=="g" || p=="h" || p=="j" || p=="k" || p=="l" || p=="ç" || p=="z" || p=="x" || p=="c" || p=="v" || p=="b" || p=="n" || p=="m") {
+        consoante++;
+    } else {
+        vogal++;
     }
 }
 
     //Saída
-
+    alert(`A palavra ${palavra} possui ${vogal} vogais e ${consoante} consoantes.`);
 </script>

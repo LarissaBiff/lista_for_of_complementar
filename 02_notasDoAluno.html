@@ -10,19 +10,20 @@
     const notasAluno = [7, 5, 9, 8];
 
     //Processamento
-    let maior;
-    let menor;
-    let soma;
-    let media;
-    for(let n of notasAluno) {
-        soma = soma + n;
-        media = soma / notasAluno.length();
-        notasAluno.sort()(function(a, b) {
-    return a - b;
-});
-        maior = 
+    let maior = 0;
+    let menor = 0;
+    let soma = 0;
+    let media = 0;
+
+    for (let n of notasAluno) {
+        soma += n;
+        media = soma / notasAluno.length;
+        notasAluno.sort((a, b) => a - b);;
+        maior = notasAluno.slice(-1)[0];
+        menor = notasAluno.slice(0, 1);
     }
+    
 
     //Saída
-
+    alert(`A maior nota é ${maior}, a menor nota é ${menor} e a média é ${media}.`);
 </script>
